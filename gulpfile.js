@@ -33,7 +33,7 @@ function comprSass() {
 function comprHtml(){
   return gulp.src('./html/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest('./dist/html'));
+    .pipe(gulp.dest('./dist'));
 }
 function comprImg(){
   gulp.src('./img/**/*.jpg')
