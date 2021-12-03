@@ -36,7 +36,7 @@ function comprHtml(){
     .pipe(gulp.dest('./dist'));
 }
 function comprImg(){
-  gulp.src('./img/**/*.jpg')
+  return gulp.src('./img/**/*.jpg')
     .pipe(imagemin())
     .pipe(gulp.dest('./dist/img'));
 }
