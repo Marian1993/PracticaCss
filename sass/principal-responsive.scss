@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
+
+@media only screen and (max-width:700px){
+
+//header
+
+header{
+    margin-top: 0 !important;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 10px 0 5px 0;
+}
+
+.open-menu{
+    display: block !important;
+    margin-left: 30px;
+    padding: 0 8px 0 8px !important;
+    background: none !important;
+    border: black 1px solid;
+    border-radius: 3px;
+    z-index: 1;
+}
+
+#drop-down ul{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 150px;
+    height: auto;
+    z-index: 1;
+    background: white;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+#drop-down ul li{
+    margin: 5px 15px 10px 10px;
+    border-bottom-style: solid;
+    border-block-color: grey;
+    border-block-width: 1px;
+}
+
+#drop-down ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.other-text{
+    font-weight: normal !important;
+    border-bottom-style: none !important;
+    font-size: 12px !important;
+}
+
+#btn-menu{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.iesmanacor {
+    width: 45px !important;
+    height: 25px !important;
+    margin-left: 0 !important;
+}
+
+#options{
+    display: none;
+}
+
+//first
+
+#sf-bg {
+    display: block !important;
+    grid-template-columns: none;
+    grid-template-rows: none;
+    background-image: url("../img/Bruja.jpg");
+    background-size: 100% 100% !important;
+    background-repeat:no-repeat;
+    height: 300px !important;
+}
+
+#sf1 {
+    background: none !important;
+    width: 60%;
+    padding-top: 50px !important;
+    padding-left: 40px !important;
+}
+
+#sf1 h5, #sf1 p {
+    padding-bottom: 5px !important ;
+    color: white;
+}
+#sf1 h3{
+    color: white;
+}
+
+#sf1 button{
+    border: black 1px solid !important;
+    font-weight: bold;
+}
+
+#sf2{
+    display: none !important;
+}
+
+#sf3{
+    display: none !important;
+}
+
+//segona secció
+
+#ss-bg{
+    display: block !important;
+    grid-template-columns: none;
+    grid-template-rows: none;
+    background-image: url("../img/fonsDrac.jpg");
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    height: 300px !important;
+}
+
+#ss1{
+    display: none;
+}
+
+#ss2{
+    padding-top: 50px !important;
+    padding-left: 40px;
+    width: 60%;
+}
+
+//main
+
+#list li{
+    width: 50% !important;
+
+}
+
+.add-basket{
+    position: absolute;
+    bottom: 0; 
+    width: 90%;
+    background:rgb(231, 237, 247);
+    font-size: 15px;
+}
+.item{
+    width: 90% !important;
+    height: 250px !important;
+}
+.languages input{
+    height: 20px !important;
+    width: 20px !important;
+}
+.name-item{
+    font-size: 20px !important;
+}
+.price-discount{
+    text-decoration-line: line-through;
+    color: grey;
+}
+.price-item, .price-discount, .red{
+    font-size: 15px !important;
+}
+
+//comentaris
+
+.images:nth-child(2), .images:nth-child(4), .images:nth-child(5){
+
+    display: none;
+}
+.images{
+    width: 50% !important;
+}
+
+//footer
+
+footer{
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+}
+
+footer>div{
+    margin:30px 0 15px 20px !important;
+    
+}
+
+footer div:nth-child(2),
+footer div:nth-child(3), footer div:nth-child(4){
+    margin-bottom: -25px !important;
+}
+
+footer div:nth-child(2) p,
+footer div:nth-child(3) p, footer div:nth-child(4) p{
+    display: none;
+}
+
+.footer-tittle{
+    border-bottom-style: solid;
+    margin-right: 20px;
+}
+
+input[name=checkbox]{
+    display: block !important;
+    float: right;
+}
+
+footer div input:last-child{
+    margin-bottom: 20px;
+}
+footer>div p{
+
+    font-size: 12px !important;
+    }
+
+// general
+
+button{
+    font-size: 15px !important;
+    padding: 0 5px 0 5px !important;
+}
+#second, main, #carousel, footer{
+
+    margin-top: 10px !important;
+}
+}
