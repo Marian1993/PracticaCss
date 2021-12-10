@@ -31,7 +31,7 @@ function comprSass() {
     .pipe(gulp.dest('./dist/css'));
 }
 function comprHtml(){
-  return gulp.src('./html/*.html')
+  return gulp.src('*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('./dist'));
 }
