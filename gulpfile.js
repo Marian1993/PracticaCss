@@ -48,7 +48,7 @@ exports.watchSass = watchSass;
 exports.comprCss = comprSass;
 exports.comprHtml = comprHtml;
 exports.comprImg = comprImg;
-exports.all = series(comprSass,comprHtml,comprImg);
+exports.build = series(comprSass,comprHtml,comprImg);
 
 
 
