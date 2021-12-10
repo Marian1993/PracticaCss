@@ -6,6 +6,7 @@ const imagemin = require('gulp-imagemin');
 const { series } = require('gulp');
 
 
+
 function validadorCSS() {
   gulp.src('./css/*.css')
     .pipe(validate())
@@ -25,6 +26,7 @@ function compiladorSass() {
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./css'));
 }
+
 function comprSass() {
   return gulp.src('./sass/*.scss')
     .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
@@ -48,7 +50,7 @@ exports.watchSass = watchSass;
 exports.comprCss = comprSass;
 exports.comprHtml = comprHtml;
 exports.comprImg = comprImg;
-exports.build = series(comprSass,comprHtml,comprImg);
+exports.build = series(comprSass,comprHtml, comprImg);
 
 
 
